@@ -2,20 +2,39 @@
 <header class="header">
   <h2>Фотостудия салют</h2>
 </header>
+<div>
+<input class="inp" type="text" v-model="number1" placeholder="Фамилия" maxlength="10">
+</div>
+<br>
+<div>
+<input class="inp" type="text" v-model="number2" placeholder="Имя" maxlength="10">
+</div>
+<br>
+<div>
+<input class="inp" type="text" v-model="number3" placeholder="Отчество" maxlength="10">
+</div>
+<br>
+<div>
+<input class="inp" type="text" v-model="number4" placeholder="+7(000)000-00-00">
+</div>
+<br>
+<input class="inp" type="date" min="27-06-2025">
+<br>
+<div>
+<input class="inp" type="text" v-model="number5" placeholder="Кол-во дней" maxlength="2" />
+</div>
 
-<input class="input" type="text" v-model="number1" placeholder="Фамилия" maxlength="10">
-<br>
-<input class="input" type="text" v-model="number2" placeholder="Имя" maxlength="10">
-<br>
-<input class="input" type="text" v-model="number3" placeholder="Отчество" maxlength="10">
-<br>
-<input class="input" type="text" v-model="number4" placeholder="+7(000)000-00-00">
-<br>
-<input class="input" type="text" v-model="number5" placeholder="Кол-во дней" maxlength="2" />
-
 <br>
 <br>
-<button class="btn"  @click="SendData"> Отправить </button>
+<button class="btn"  @Click = "SendData"> Отправить </button>
+<div v-if="Data">
+  Ваши данные:
+  <p>Имя: {{ number1 }}</p>
+  <p>Имя: {{ number2 }}</p>
+  <p>Имя: {{ number3 }}</p>
+  <p>Имя: {{ number4 }}</p>
+  <p>Имя: {{ number5 }}</p>
+</div>
 
 <footer class="footer">
   @все права защищены 2025
@@ -31,7 +50,10 @@ const number3 = ref("")
 const number4 = ref("")
 const number5 = ref("")
 
-const SendData = true
+
+function SendData() {
+  Data.value = true
+}
 
 </script>
 
@@ -55,6 +77,7 @@ const SendData = true
 .input{
   background-color: white;
   border-radius: 6px;
+  color: black  
 }
 
 .btn{
