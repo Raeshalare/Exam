@@ -29,12 +29,13 @@
 <button class="btn"  @Click = "SendData"> Отправить </button>
 <div v-if="Data">
   Ваши данные:
-  <p>Имя: {{ number1 }}</p>
   <p>Имя: {{ number2 }}</p>
-  <p>Имя: {{ number3 }}</p>
-  <p>Имя: {{ number4 }}</p>
-  <p>Имя: {{ number5 }}</p>
+  <p>Фамилия: {{ number1 }}</p>
+  <p>Отчество: {{ number3 }}</p>
+  <p>Телефон: {{ number4 }}</p>
+  <p>Кол-во дней: {{ number5 }}</p>
 </div>
+
 
 <footer class="footer">
   @все права защищены 2025
