@@ -50,6 +50,7 @@ const number3 = ref("")
 const number4 = ref("")
 const number5 = ref("")
 
+const Data = ref(false)
 
 function SendData() {
   Data.value = true
