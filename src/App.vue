@@ -3,19 +3,19 @@
   <h2>Фотостудия салют</h2>
 </header>
 
-<input type="text" v-model="number1" placeholder="Фамилия" maxlength="10">
+<input class="input" type="text" v-model="number1" placeholder="Фамилия" maxlength="10">
 <br>
-<input type="text" v-model="number2" placeholder="Имя" maxlength="10">
+<input class="input" type="text" v-model="number2" placeholder="Имя" maxlength="10">
 <br>
-<input type="text" v-model="number3" placeholder="Отчество" maxlength="10">
+<input class="input" type="text" v-model="number3" placeholder="Отчество" maxlength="10">
 <br>
-<input type="text" v-model="number4" placeholder="+7(000)000-00-00">
+<input class="input" type="text" v-model="number4" placeholder="+7(000)000-00-00">
 <br>
-<input type="text" v-model="number5" placeholder="Кол-во дней" maxlength="2" />
+<input class="input" type="text" v-model="number5" placeholder="Кол-во дней" maxlength="2" />
 
 <br>
 <br>
-<button @click="SendData"> Отправить </button>
+<button class="btn"  @click="SendData"> Отправить </button>
 
 <footer class="footer">
   @все права защищены 2025
@@ -52,6 +52,19 @@ const SendData = true
   height: 50px;
 }
 
+.input{
+  background-color: white;
+  border-radius: 6px;
+}
 
+.btn{
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: black;
+}
+.btn:hover{
+  background-color: black;
+  color: whitesmoke
+}
 
 </style>
