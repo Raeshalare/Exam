@@ -54,7 +54,8 @@ const number5 = ref("")
 const Data = ref(false)
 
 function SendData() {
-  Data.value = true
+    Data.value = true
+  alert(Data.value)
 }
 
 </script>
